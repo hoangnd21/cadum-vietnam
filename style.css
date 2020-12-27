@@ -31,27 +31,33 @@
 }
 
 .d-flex {
-  display: "flex";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .d-block {
-  display: "block";
+  display: block;
 }
 
 .d-flex {
-  display: "flex";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .d-inline-flex {
-  display: "inline-flex";
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .d-none {
-  display: "none";
+  display: none;
 }
 
 .d-inline {
-  display: "inline";
+  display: inline;
 }
 
 * {
