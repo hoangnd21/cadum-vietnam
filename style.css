@@ -123,6 +123,30 @@
   display: inline;
 }
 
+.text-none {
+  text-transform: none;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-initial {
+  text-transform: initial;
+}
+
+.text-inherit {
+  text-transform: inherit;
+}
+
 * {
   padding: 0;
   margin: 0;
