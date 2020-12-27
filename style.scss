@@ -1,31 +1,55 @@
 // #region Properties
 
-$color-pallettes: (
-  "accent": ("light": #ffeff3,"heavy": #f191a6),
-  "primary": ("light": #e54d6c,"heavy": #b20932),
-  "muted": ("default": #626262)
+$color-default: (
+  "accent": #f191a6,
+  "primary": #b20932,
+  );
+$color-light: (
+  "accent": #ffeff3,
+  "primary": #e54d6c,
 );
 
-@each $pallette in $color-pallettes {
-  
-  @each $color in $pallette {
-    .text-#{$pallete}-#{$color} {
+$muted: ("default": #626262);
+
+
+$displays: "flex", "block", "flex", "inline-flex", "none", "inline";
+
+@each $theme, $color in $color-default {
+  .text-#{$theme} {
       color: $color;
-    }
   }
-  .bg-#{$pallete}-#{$color} {
-    background-color: $color;
+  
+  .bg-#{$theme} {
+      background-color: $color;
   }
 }
+
+@each $theme, $color in $color-light {
+  .text-light-#{$theme} {
+      color: $color;
+  }
+  
+  .bg-light-#{$theme} {
+      background-color: $color;
+  }
+}
+
+@each $display in $displays {
+  .d-#{$display} {
+    display: $display;
+  }
+}
+
 // #endregion
+
+// #region CSS declarations
 
 * {
 	padding: 0;
-	margin: 0;
-	body {
-		margin: 0
-	}
+  margin: 0;
+  box-sizing: border-box;
 }
+
 
 .row {
 	@extend .flex;
@@ -35,3 +59,5 @@ $color-pallettes: (
 .flex {
 	display: flex;
 }
+
+// #engregion

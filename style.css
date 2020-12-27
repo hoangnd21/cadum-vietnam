@@ -1,0 +1,73 @@
+.text-accent {
+  color: #f191a6;
+}
+
+.bg-accent {
+  background-color: #f191a6;
+}
+
+.text-primary {
+  color: #b20932;
+}
+
+.bg-primary {
+  background-color: #b20932;
+}
+
+.text-light-accent {
+  color: #ffeff3;
+}
+
+.bg-light-accent {
+  background-color: #ffeff3;
+}
+
+.text-light-primary {
+  color: #e54d6c;
+}
+
+.bg-light-primary {
+  background-color: #e54d6c;
+}
+
+.d-flex {
+  display: "flex";
+}
+
+.d-block {
+  display: "block";
+}
+
+.d-flex {
+  display: "flex";
+}
+
+.d-inline-flex {
+  display: "inline-flex";
+}
+
+.d-none {
+  display: "none";
+}
+
+.d-inline {
+  display: "inline";
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.row {
+  width: 100%;
+}
+
+.flex, .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=style.css.map */
