@@ -1,9 +1,37 @@
+// #region Properties
+
+$color-pallettes: (
+  "accent": ("light": #ffeff3,"heavy": #f191a6),
+  "primary": ("light": #e54d6c,"heavy": #b20932),
+  "muted": ("default": #626262)
+);
+
+@each $pallette in $color-pallettes {
+  
+  @each $color in $pallette {
+    .text-#{$pallete}-#{$color} {
+      color: $color;
+    }
+  }
+  .bg-#{$pallete}-#{$color} {
+    background-color: $color;
+  }
+}
+// #endregion
+
 * {
-padding: 0;
-margin: 0;
+	padding: 0;
+	margin: 0;
+	body {
+		margin: 0
+	}
 }
 
 .row {
-	display: flex;
+	@extend .flex;
 	width: 100%;
+}
+
+.flex {
+	display: flex;
 }
