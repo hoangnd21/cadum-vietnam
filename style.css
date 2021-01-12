@@ -11,6 +11,18 @@
   src: url("assets/font/BebasNeueBold.eot?#iefix") format("embedded-opentype"), url("assets/font/BebasNeueBold.woff") format("woff"), url("assets/font/BebasNeueBold.ttf") format("truetype"), url("assets/font/BebasNeueBold.svg##BebasNeueBold") format("svg");
 }
 
+@font-face {
+  font-family: 'SVN-Avo';
+  src: url("assets/font/SVN-Avo.eot");
+  src: url("assets/font/SVN-Avo.eot?#iefix") format("embedded-opentype"), url("assets/font/SVN-Avo.woff") format("woff"), url("assets/font/SVN-Avo.ttf") format("truetype"), url("assets/font/SVN-Avo.svg#SVN-Avo") format("svg");
+}
+
+@font-face {
+  font-family: 'SVN-AvoBold';
+  src: url("assets/font/SVN-Avobold.eot");
+  src: url("assets/font/SVN-Avobold.eot?#iefix") format("embedded-opentype"), url("assets/font/SVN-Avobold.woff") format("woff"), url("assets/font/SVN-Avobold.ttf") format("truetype"), url("assets/font/SVN-Avobold.svg#SVN-Avobold") format("svg");
+}
+
 .text-accent {
   color: #f191a6 !important;
 }
@@ -97,6 +109,14 @@ section.nav-container {
   font-family: 'Bebas Neue';
 }
 
+.avo {
+  font-family: 'SVN-Avo';
+}
+
+.avo-bold {
+  font-family: 'SVN-AvoBold';
+}
+
 h1.cadum {
   font-size: 80px;
 }
@@ -105,8 +125,8 @@ h1.cadum {
   color: #fff;
   text-shadow: 3px 3px 4px rgba(150, 150, 150, 0.88);
   margin: 0 10px;
-  font-size: 28px;
-  width: 120px;
+  font-size: 24px;
+  width: 100px;
   font-weight: normal;
   border: 0 !important;
   border-radius: 0 !important;
@@ -124,6 +144,33 @@ h1.cadum {
   opacity: 0.8;
   -webkit-transition: background 0.15s linear;
   transition: background 0.15s linear;
+}
+
+.header-buttons {
+  max-width: 250px;
+  width: 100%;
+}
+
+.header-buttons a .btn {
+  border-radius: 50px;
+  letter-spacing: .5px;
+  font-size: 18px;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+.header-buttons a:first-child .btn {
+  color: #fff;
+  background-color: #f191a6;
+}
+
+.header-buttons a:last-child .btn {
+  color: #b20932;
+  border: 1px solid #b20932;
+  background-color: transparent;
 }
 
 .timeline ul li {
