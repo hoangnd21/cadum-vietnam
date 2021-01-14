@@ -120,6 +120,15 @@ section.nav-container {
   width: 100% !important;
 }
 
+section.product-container {
+  background-image: url("/assets/brand/bg-product.jpg");
+  background-size: 100% auto;
+  background-position: 60% 20%;
+  background-repeat: no-repeat;
+  height: 70vh;
+  width: 100% !important;
+}
+
 h1.cadum {
   font-size: 80px;
 }
@@ -147,6 +156,44 @@ h1.cadum {
   opacity: 0.8;
   -webkit-transition: background 0.15s linear;
   transition: background 0.15s linear;
+}
+
+.product-button a .btn {
+  border-radius: 50px;
+  letter-spacing: .5px;
+  font-size: 18px;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  color: #fff;
+  background-color: #f191a6;
+}
+
+.elevated-box {
+  -webkit-box-shadow: 0px 0px 9px 2px #999999;
+          box-shadow: 0px 0px 9px 2px #999999;
+  border-radius: 50px;
+}
+
+.elevated-box .statement-block {
+  position: relative;
+  background-color: #3E7EBE;
+  max-width: 50%;
+  color: white;
+  margin: auto;
+}
+
+.elevated-box .statement-block::before {
+  content: '';
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  position: absolute;
+  left: -30px;
+  bottom: 0;
+  border-radius: 50px;
 }
 
 .header-buttons {
