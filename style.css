@@ -107,6 +107,10 @@ body {
   cursor: pointer;
 }
 
+.italic {
+  font-style: italic;
+}
+
 section.nav-container {
   background-image: url("/assets/brand/bg-nav.jpg");
   background-size: 100% auto;
@@ -181,5 +185,67 @@ h1.cadum {
 .certificates img {
   background-color: #fff;
   padding: 10px;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 0;
+  border-right: 2px dashed #f191a6;
+  margin: 0 auto;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline ul li:nth-child(odd)::after {
+  background-color: #f191a6;
+}
+
+.timeline ul li:nth-child(even)::after {
+  background-color: #626262;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 300px;
+  padding: 15px;
+}
+
+.timeline ul li div::before {
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  padding-left: 0;
+  left: 45px;
+}
+
+.timeline ul li:nth-child(even) div {
+  padding-right: 0;
+  left: -339px;
+  text-align: right;
+}
+
+time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
 }
 /*# sourceMappingURL=style.css.map */
