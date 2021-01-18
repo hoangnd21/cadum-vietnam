@@ -14,12 +14,34 @@
   </head>
 
   <body class="container-fluid">
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit=function() {
+        FB.init({
+          xfbml: true,
+          version: 'v9.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs=d.getElementsByTagName(s)[0];
+        if(d.getElementById(id)) return;
+        js=d.createElement(s); js.id=id;
+        js.src='https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="112949407037830" theme_color="#f191a6">
+    </div>
+
     <!-- Contact section, sticky to bottom -->
-    <div id="contact">
+    <!-- <div id="contact">
       <div class="container-content">
         <h2 class="bebas text-center mb-0">MUA NGAY</h2>
       </div>
-    </div>
+    </div> -->
 
     <!-- Header image -->
     <section class="container-fluid nav-container d-flex flex-column">
@@ -41,7 +63,7 @@
           <a href="#consult">
             <button class="btn pt-3">Tư Vấn</button>
           </a>
-          <a href="#contact">
+          <a href="#contact-form">
             <button class="btn pt-3">Liên hệ</button>
           </a>
         </div>
@@ -249,7 +271,39 @@
           <p style="height: 40vh;"></p>
         </div>
       </section>
+
+      <!-- Consult section -->
+      <section class="container-fluid mt-5 pb-5" id="contact-form">
+        <div class="container-content">
+          <h1 class="bebas text-center text-primary">Liên hệ</h1>
+          <form action="" class="row d-flex justify-content-center avo">
+            <div class="col-6">
+              <label for="name">Họ tên*</label><br>
+              <input type="text" id="name" name="name" class="w-100" required>
+            </div>
+            <div class="col-6">
+              <label for="phone">Số điện thoại*</label><br>
+              <input type="tel" id="phone" name="phone" class="w-100" required>
+            </div>
+            <div class="col-12">
+              <label for="phone">Email*</label><br>
+              <input type="email" id="email" name="email" class="w-100" required>
+            </div>
+            <div class="col-12">
+              <label for="phone">Nội dung</label><br>
+              <textarea type="text" rows="4" id="content" name="content" class="w-100"></textarea>
+            </div>
+
+            <div class="col-12 text-center">
+              <button>Gửi</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
     </section>
+
+
     <!-- Certificates section -->
     <!-- TODO: To confirm -->
     <section class="container" id="certificate">
