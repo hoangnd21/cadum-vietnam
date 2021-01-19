@@ -56,12 +56,42 @@
   color: #f191a6 !important;
 }
 
+.btn-accent {
+  color: white;
+  background-color: #f191a6 !important;
+}
+
+.btn-outline-accent {
+  color: #f191a6 !important;
+  border-color: #f191a6 !important;
+}
+
+.btn-outline-accent:hover {
+  color: white !important;
+  background-color: #f191a6 !important;
+}
+
 .bg-accent {
   background-color: #f191a6 !important;
 }
 
 .text-primary {
   color: #b20932 !important;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #b20932 !important;
+}
+
+.btn-outline-primary {
+  color: #b20932 !important;
+  border-color: #b20932 !important;
+}
+
+.btn-outline-primary:hover {
+  color: white !important;
+  background-color: #b20932 !important;
 }
 
 .bg-primary {
@@ -72,12 +102,42 @@
   color: #626262 !important;
 }
 
+.btn-muted {
+  color: white;
+  background-color: #626262 !important;
+}
+
+.btn-outline-muted {
+  color: #626262 !important;
+  border-color: #626262 !important;
+}
+
+.btn-outline-muted:hover {
+  color: white !important;
+  background-color: #626262 !important;
+}
+
 .bg-muted {
   background-color: #626262 !important;
 }
 
 .text-white {
   color: #fff !important;
+}
+
+.btn-white {
+  color: white;
+  background-color: #fff !important;
+}
+
+.btn-outline-white {
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+.btn-outline-white:hover {
+  color: white !important;
+  background-color: #fff !important;
 }
 
 .bg-white {
@@ -314,6 +374,26 @@ button.btn:active, button.btn:focus {
   color: white;
   background-color: #e54d6c;
   border-radius: 30px 30px 0 0;
+}
+
+#contact-form input:focus, #contact-form textarea:focus {
+  outline: none !important;
+}
+
+#contact-form .col-6, #contact-form .col-12 {
+  margin-bottom: 10px;
+}
+
+#contact-form form {
+  max-width: 60%;
+  width: 100%;
+  margin: auto;
+}
+
+#contact-form button {
+  border-radius: 50px !important;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .timeline ul li {

@@ -9,6 +9,9 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet"
+      href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+      integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
 
     <link rel="stylesheet" href="style.css">
   </head>
@@ -30,18 +33,20 @@
         js=d.createElement(s); js.id=id;
         js.src='https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 
     <!-- Your Chat Plugin code -->
     <div class="fb-customerchat" attribution=setup_tool page_id="112949407037830" theme_color="#f191a6">
     </div>
 
     <!-- Contact section, sticky to bottom -->
-    <!-- <div id="contact">
+
+    <div id="contact">
       <div class="container-content">
         <h2 class="bebas text-center mb-0">MUA NGAY</h2>
       </div>
-    </div> -->
+    </div>
 
     <!-- Header image -->
     <section class="container-fluid nav-container d-flex flex-column">
@@ -108,11 +113,11 @@
         </p>
 
         <div class="certificates d-flex justify-content-between my-5">
-          <img src="/assets/brand/cadum2.png" alt="" width="100">
-          <img src="/assets/brand/cadum3.png" alt="" width="100">
-          <img src="/assets/brand/LOreal-Logo.png" alt="" width="100" height="auto">
-          <img src="/assets/brand/cadum5.png" alt="" width="100">
-          <img src="/assets/brand/logo3.jpg" alt="" width="100">
+          <img src="/assets/brand/cadum2.png" alt="" height="100">
+          <img src="/assets/brand/cadum3.png" alt="" height="100">
+          <img src="/assets/brand/LOreal-Logo.png" alt="" height="100">
+          <img src="/assets/brand/cadum5.png" alt="" height="100">
+          <img src="/assets/brand/logo3.jpg" alt="" height="100">
         </div>
       </div>
     </section>
@@ -278,24 +283,26 @@
           <h1 class="bebas text-center text-primary">Liên hệ</h1>
           <form action="" class="row d-flex justify-content-center avo">
             <div class="col-6">
-              <label for="name">Họ tên*</label><br>
-              <input type="text" id="name" name="name" class="w-100" required>
+              <label for="name" class="bmd-label-floating">Họ tên*</label>
+              <input type="text" class="form-control" id="name" name="name" required>
             </div>
             <div class="col-6">
-              <label for="phone">Số điện thoại*</label><br>
-              <input type="tel" id="phone" name="phone" class="w-100" required>
+              <label for="phone" class="bmd-label-floating">Số điện thoại*</label>
+              <input type="tel" class="form-control" id="phone" name="phone" required>
             </div>
             <div class="col-12">
-              <label for="phone">Email*</label><br>
-              <input type="email" id="email" name="email" class="w-100" required>
+              <label for="email" class="bmd-label-floating">Email*</label>
+              <input type="email" class="form-control" id="email" name="email" required>
             </div>
             <div class="col-12">
-              <label for="phone">Nội dung</label><br>
-              <textarea type="text" rows="4" id="content" name="content" class="w-100"></textarea>
+              <label for="content" class="bmd-label-floating">Nội dung</label>
+              <textarea type="text" class="form-control" id="content" name="content"></textarea>
             </div>
 
-            <div class="col-12 text-center">
-              <button>Gửi</button>
+            <div class="col-12 text-center mt-2 mb-5">
+              <button class="btn btn-outline-primary bebas" type="submit">
+                <h3 class="m-0">Gửi</h3>
+              </button>
             </div>
           </form>
         </div>
@@ -311,10 +318,20 @@
 
       </div>
     </section>
-    <script src="/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
       crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+      integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+      crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+      integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+      crossorigin="anonymous"></script>
+    <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+    <script src="/script.js"></script>
   </body>
 
 </html>
