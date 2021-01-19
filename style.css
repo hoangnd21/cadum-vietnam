@@ -426,6 +426,10 @@ button.btn:active, button.btn:focus {
   padding-right: 40px;
 }
 
+#footer {
+  padding-bottom: 100px !important;
+}
+
 #footer hr {
   max-width: 20%;
   width: 100%;
