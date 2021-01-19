@@ -52,6 +52,42 @@
   src: url("assets/font/SVN-BebasNeueBold.eot?#iefix") format("embedded-opentype"), url("assets/font/SVN-BebasNeueBold.woff") format("woff"), url("assets/font/SVN-BebasNeueBold.ttf") format("truetype"), url("assets/font/SVN-BebasNeueBold.svg#SVN-BebasNeueBold") format("svg");
 }
 
+.iciel, body, .statement-container h4 {
+  font-family: 'iCiel Koni';
+}
+
+.avo, .statement-container .statement li {
+  font-family: 'SVN-Avo';
+}
+
+.avo-i {
+  font-family: 'SVN-Avo-I';
+}
+
+.avo-bi {
+  font-family: 'SVN-Avo-BI';
+}
+
+.avo-b {
+  font-family: 'SVN-Avo-B';
+}
+
+.bebas {
+  font-family: 'SVN-Bebas Neue';
+}
+
+.bebas-book {
+  font-family: 'SVN-Bebas Neue-Book';
+}
+
+.bebas-light {
+  font-family: 'SVN-Bebas Neue-L';
+}
+
+.bebas-b {
+  font-family: 'SVN-Bebas Neue-B';
+}
+
 .text-accent {
   color: #f191a6 !important;
 }
@@ -148,12 +184,42 @@
   color: #ffeff3 !important;
 }
 
+.btn-accent {
+  color: white;
+  background-color: #ffeff3 !important;
+}
+
+.btn-light-outline-accent {
+  color: #ffeff3 !important;
+  border-color: #ffeff3 !important;
+}
+
+.btn-light-outline-accent:hover {
+  color: white !important;
+  background-color: #ffeff3 !important;
+}
+
 .bg-light-accent {
   background-color: #ffeff3 !important;
 }
 
 .text-light-primary {
   color: #e54d6c !important;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #e54d6c !important;
+}
+
+.btn-light-outline-primary {
+  color: #e54d6c !important;
+  border-color: #e54d6c !important;
+}
+
+.btn-light-outline-primary:hover {
+  color: white !important;
+  background-color: #e54d6c !important;
 }
 
 .bg-light-primary {
@@ -169,42 +235,6 @@
 
 body {
   position: relative;
-}
-
-.iciel, body, .statement-container h4 {
-  font-family: 'iCiel Koni';
-}
-
-.avo, .statement-container .statement li {
-  font-family: 'SVN-Avo';
-}
-
-.avo-i {
-  font-family: 'SVN-Avo-I';
-}
-
-.avo-bi {
-  font-family: 'SVN-Avo-BI';
-}
-
-.avo-b {
-  font-family: 'SVN-Avo-B';
-}
-
-.bebas {
-  font-family: 'SVN-Bebas Neue';
-}
-
-.bebas-book {
-  font-family: 'SVN-Bebas Neue-Book';
-}
-
-.bebas-light {
-  font-family: 'SVN-Bebas Neue-L';
-}
-
-.bebas-b {
-  font-family: 'SVN-Bebas Neue-B';
 }
 
 .container-fluid {
@@ -394,6 +424,23 @@ button.btn:active, button.btn:focus {
   border-radius: 50px !important;
   padding-left: 40px;
   padding-right: 40px;
+}
+
+#footer hr {
+  max-width: 20%;
+  width: 100%;
+  margin: auto;
+  border-color: #b20932 !important;
+  background-color: #b20932 !important;
+}
+
+#footer p {
+  margin-bottom: 10px;
+}
+
+#footer .icons i {
+  font-size: 32px;
+  padding-left: 20px;
 }
 
 .timeline ul li {
