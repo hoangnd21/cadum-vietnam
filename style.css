@@ -392,6 +392,10 @@ button.btn:active, button.btn:focus {
   color: #E2C2C7 !important;
 }
 
+#product .product-name {
+  font-size: 20px;
+}
+
 #contact {
   position: fixed;
   bottom: 0;
