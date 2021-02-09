@@ -335,11 +335,29 @@ button.btn:active, button.btn:focus {
 }
 
 .statement-container .statement {
-  list-style-image: url("/assets/misc/tick.png");
+  list-style-type: none;
 }
 
-.statement-container .statement.no {
-  list-style-image: url("/assets/misc/checkbox-no.png");
+.statement-container .statement li {
+  margin: 15px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.statement-container .statement li:before {
+  content: url("/assets/misc/tick.png");
+}
+
+.statement-container .statement.no li:before {
+  content: url("/assets/misc/checkbox-no.png");
 }
 
 .statement-container.no h4 {
