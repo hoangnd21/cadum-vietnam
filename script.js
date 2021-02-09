@@ -1,11 +1,24 @@
 window.onload = () => {
-	document.querySelectorAll('div[href^="#"]').forEach(anchor => {
-	anchor.addEventListener('click', function (e) {
-		e.preventDefault();
+  const navButtons = [
+    'introduction',
+    'timeline',
+    'product',
+    'timeline',
+    'consult',
+    'contact-form',
+  ];
 
-		document.querySelector(this.getAttribute('href')).scrollIntoView({
-			behavior: 'smooth'
-		});
-	});
-});
+  navButtons.forEach(sectionName => {
+    const navBtn = document.querySelector(`div.nav-${ sectionName }`);
+    if (!navBtn) {
+      return;
+    }
+    navBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(`section#${ sectionName }`).scrollIntoView({
+        behavior: 'smooth'
+      });
+
+    });
+  });
 }
