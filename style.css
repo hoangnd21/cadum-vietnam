@@ -452,6 +452,10 @@ button.btn:active, button.btn:focus {
   background-color: #b20932 !important;
 }
 
+#footer a {
+  color: #b20932;
+}
+
 #footer p {
   margin-bottom: 10px;
 }
