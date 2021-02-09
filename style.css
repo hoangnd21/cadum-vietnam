@@ -304,6 +304,10 @@ button.btn:active, button.btn:focus {
   transition: background 0.15s linear;
 }
 
+.name-slogan {
+  margin-top: -50px !important;
+}
+
 .product-button a .btn {
   border-radius: 50px;
   letter-spacing: .5px;
@@ -485,6 +489,39 @@ button.btn:active, button.btn:focus {
 #footer .icons i {
   font-size: 32px;
   padding-left: 20px;
+}
+
+@media (max-width: 1199.98px) {
+  .nav-consult {
+    display: none;
+  }
+  .header {
+    margin: 0 !important;
+  }
+  .nav-container {
+    background-position: 60% 0 !important;
+    height: 50vh !important;
+  }
+  .nav-container .container-content {
+    max-width: 100%;
+  }
+  .nav-container .nav-buttons {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .name-slogan {
+    margin-top: 150px !important;
+  }
+  .certificates {
+    margin: auto -100px;
+  }
+  #product .mt-xl-5.mt-lg-0 {
+    max-width: 85%;
+  }
+  #product .mt-xl-5.mt-lg-0 .row {
+    margin-top: -100px;
+  }
 }
 
 .timeline ul li {
