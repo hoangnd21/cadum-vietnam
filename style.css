@@ -283,6 +283,12 @@ button.btn:active, button.btn:focus {
   outline: 0 !important;
 }
 
+.nav-buttons {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .nav-buttons .btn {
   color: #fff;
   text-shadow: 3px 3px 4px rgba(150, 150, 150, 0.88);
@@ -402,7 +408,9 @@ button.btn:active, button.btn:focus {
 }
 
 .certificates img {
+  background-color: #fff;
   padding: 10px;
+  border-radius: 5px;
 }
 
 .divider div {
@@ -440,6 +448,10 @@ button.btn:active, button.btn:focus {
 
 #contact .cta-button.facebook {
   padding: .46875rem 54px;
+}
+
+#contact-form h1 {
+  margin-bottom: 2.5rem !important;
 }
 
 #contact-form input:focus, #contact-form textarea:focus {
@@ -505,11 +517,6 @@ button.btn:active, button.btn:focus {
   .nav-container .container-content {
     max-width: 100%;
   }
-  .nav-container .nav-buttons {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
   .name-slogan {
     margin-top: 150px !important;
   }
@@ -521,6 +528,16 @@ button.btn:active, button.btn:focus {
   }
   #product .mt-xl-5.mt-lg-0 .row {
     margin-top: -100px;
+  }
+  #contact-form .container-content {
+    max-width: 100%;
+  }
+  #contact-form .container-content form {
+    max-width: 75%;
+  }
+  #footer .container-content {
+    max-width: 100%;
+    margin-bottom: 100px;
   }
 }
 
