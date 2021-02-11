@@ -427,14 +427,15 @@ button.btn:active, button.btn:focus {
 }
 
 #contact {
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   bottom: 0;
   z-index: 1000;
   width: 100%;
 }
 
 #contact .container-content {
-  max-width: 600px;
+  max-width: 750px;
   width: 100%;
   margin: auto;
   color: white;
@@ -479,7 +480,7 @@ button.btn:active, button.btn:focus {
 }
 
 #footer {
-  padding-bottom: 100px !important;
+  padding-bottom: 30px !important;
 }
 
 #footer hr {
